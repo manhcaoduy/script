@@ -41,6 +41,6 @@ nmap <S-W> $
 vmap <S-W> $
 
 "Buffer switching
-nmap <S-h> :bp<CR> 
-nmap <S-l> :bn<CR> 
+nmap <C-h> :bp<CR> 
+nmap <C-l> :bn<CR> 
 nmap c :BW<CR>
