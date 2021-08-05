@@ -44,3 +44,12 @@ vmap <S-W> $
 nmap <C-h> :bp<CR> 
 nmap <C-l> :bn<CR> 
 nmap c :BW<CR>
+
+"Auto brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
