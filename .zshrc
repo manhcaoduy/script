@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/manhcd/.oh-my-zsh"
+export ZSH="/home/manhcao/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -123,6 +123,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # <<< nvm end here <<<
+
+# Golang
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export GOSUMDB=off
+
+# Custom path
+export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
+eval "$(direnv hook zsh)"
 
 # >>> Cowsay >>>>
 fortune | cowsay | go run ~/main.go
