@@ -56,3 +56,6 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 "For copy content
 vmap <C-C> "+y
+
+"Disable preview window of YCM
+set completeopt-=preview
