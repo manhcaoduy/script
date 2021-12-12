@@ -27,10 +27,9 @@ nmap <S-l> l10
 vmap <S-l> l10
 
 "Visual tab
-vnoremap > >gv
-vnoremap < <gv
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
@@ -57,5 +56,3 @@ inoremap {;<CR> {<CR>};<ESC>O
 "For copy content
 vmap <C-C> "+y
 
-"Disable preview window of YCM
-set completeopt-=preview

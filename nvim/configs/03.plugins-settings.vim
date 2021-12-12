@@ -1,6 +1,5 @@
 "NERDTree 
 map <C-b> :NERDTreeToggle<CR>
-map <C-i> :NERDTreeFind<CR>
 let g:NERDDefaultAlign = 'left'
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules']
@@ -39,3 +38,15 @@ let g:airline#extensions#tabline#formatter = 'default'
 "vim-go
 let g:go_doc_keywordprg_enabled = 0
 let g:go_gopls_enabled = 0
+
+"Disable preview window of YCM
+set completeopt-=preview
+let g:ycm_filetype_whitelist = {
+			\ "c":1,
+			\ "cpp":1,
+			\ "objc":1,
+			\ "sh":1,
+			\ "zsh":1,
+			\ "zimbu":1,
+			\ "python":1,
+			\ }
